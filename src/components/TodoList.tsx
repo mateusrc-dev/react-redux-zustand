@@ -1,8 +1,8 @@
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../store";
 
 export function TodoList() {
   // with useSelector we can get the information that was sent by the context - let's return only the todo
-  const todos = useSelector((store) => {
+  const todos = useAppSelector((store) => {
     return store.todo;
   });
 

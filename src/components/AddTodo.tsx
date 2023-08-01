@@ -9,8 +9,10 @@ export function AddTodo() {
   function handleNewTodo(e: FormEvent) {
     e.preventDefault();
 
-    // dispatch is a function for called the action of todo
-    dispatch(add(newTodo));
+    // dispatch is a function for called the action of todo...
+    dispatch(add({ newTodo }));
+
+    setNewTodo("");
   }
 
   return (
