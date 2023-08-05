@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useSelector, TypedUseSelectorHook } from "react-redux";
-import { player } from "../pages/slices/player";
+import { player } from "./slices/player";
 
 // redux use the context api
 // store is the global state
