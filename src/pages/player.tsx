@@ -7,8 +7,8 @@ import { useCurrentLesson } from "../store/slices/player";
 import { useEffect } from "react";
 
 export function Player() {
-  const modules = useAppSelector((state) => {
-    return state.player.course.modules;
+  const { modules } = useAppSelector((state) => {
+    return state.player.course;
   });
 
   const { currentLesson } = useCurrentLesson();
