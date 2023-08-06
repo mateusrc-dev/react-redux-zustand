@@ -11,6 +11,10 @@ export function Video() {
     dispatch(next());
   }
 
+  if (!currentLesson) {
+    return null;
+  }
+
   return (
     <ReactPlayer
       with="100%"
